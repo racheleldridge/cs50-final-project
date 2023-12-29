@@ -1,3 +1,10 @@
+# Whats for dinner
+#### Video Demo:  https://youtu.be/G9d6jfyo1NI
+#### Description:
+This application is a app to help people come up with new idead of meals to create.
+All you have to do is sign up using either an email and password or using your google or Github log in. 
+Once logged in you can look at a random recipe
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

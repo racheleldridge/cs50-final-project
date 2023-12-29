@@ -8,11 +8,6 @@ import LoggedInTitleContainer from '../components/LoggedInTitleContainer';
 
 //https://www.themealdb.com/api.php
 // Display the recipe
-//meals {}
-    //"strMeal - Name
-    //"strMealThumb" - Pic
-    //"strCategory" - What Kind of dish
-    //strArea - more like cat - Itallian
     //strYoutube - A Youtube video of it being made
     //strInstructions - Instructions of how to make it
     //"strIngredient 1-20 - Ingredients 
@@ -67,6 +62,7 @@ const RandomRecipes = (props) => {
                         <div className="h-100 p-5 rounded-3 lightestcard">
                             <h2 className='label'>Instructions</h2>
                             <p>{meal && meal.strInstructions}</p>
+                            <a target='_blank' href={meal && meal.strYoutube}>{meal && meal.strYoutube}</a>
                         </div>
                     </div>
                     <div className="col-md-3 padding" >
