@@ -1,18 +1,19 @@
-import { useAuth0 } from '@auth0/auth0-react';
+import { useEffect, useState } from "react"
 
-const Profile = () => {
-    const { user, isAuthenticated } = useAuth0();
+const Profile = (props) => {
+    
+    const [user, setUser] = useState()
+    
+    useEffect(() => {
+        if (!props.user) return;
+        setUser(props.user)
+    }, [props.user])
   
     return (
-        isAuthenticated && (
-            <article>
-                {user?.picture && <img class="rounded-circle profilepic" src={user.picture} alt={user?.name} />}
-                {user?.name}
-                {/* <ul>
-                    {Object.keys(user).map((objKey,i) => <li key={i}>{objKey}: {user[objKey]}</li>)}
-                </ul> */}
-            </article>
-        )
+        <article>
+            {user && user?.picture && <img className="rounded-circle profilepic" src={user && user.picture} alt={user && user?.name} />}
+            {user && user?.name}
+        </article>
     )
   }
 export default Profile
