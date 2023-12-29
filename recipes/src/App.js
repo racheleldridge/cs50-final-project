@@ -3,6 +3,8 @@ import LoginButton from './Components/LoginButton';
 import LogoutButton from './Components/LogoutButton';
 import Profile from './Components/Profile';
 import HomePage from './Components/HomePage';
+import SignedInPage from './Components/LoggedInPage';
+import GetRecipes from './Components/GetRecipes';
 import {Container, Nav, Navbar} from 'react-bootstrap';
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
       <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" pullLeft="true"/>
-        <Navbar.Brand href="#home" pullLeft="true">The To-Do list</Navbar.Brand>
+        <Navbar.Brand href="#home" pullLeft="true">Whats for dinner</Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
           </Nav>
@@ -27,6 +29,8 @@ function App() {
     </Container>
     </Navbar>
     <HomePage />
+    <SignedInPage />
+    <GetRecipes />
     </main>
   )
 }

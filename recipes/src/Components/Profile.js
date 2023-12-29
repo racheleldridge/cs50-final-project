@@ -6,7 +6,7 @@ const Profile = () => {
     return (
         isAuthenticated && (
             <article>
-                {user?.picture && <img class="rounded-circle" src={user.picture} alt={user?.name} />}
+                {user?.picture && <img class="rounded-circle profilepic" src={user.picture} alt={user?.name} />}
                 {user?.name}
                 {/* <ul>
                     {Object.keys(user).map((objKey,i) => <li key={i}>{objKey}: {user[objKey]}</li>)}

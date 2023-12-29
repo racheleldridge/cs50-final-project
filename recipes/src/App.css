@@ -36,7 +36,10 @@
     transform: rotate(360deg);
   }
 }
-
+.lightestcard {
+  color: #282c34 !important;
+  background-color: #BDCFEF !important;
+}
 .lightcard {
   background-color: #618bd9 !important;
 }
@@ -50,4 +53,19 @@
 .padding {
   margin: 1em 0em;
 }
+.profilepic {
+  padding-left: 0.5rem !important;
+}
 
+article {
+  padding-right: 1rem;
+}
+article img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 3rem;
+}
+
+.logo {
+  width: 15rem;
+}
